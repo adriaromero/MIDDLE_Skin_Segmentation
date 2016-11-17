@@ -7,13 +7,17 @@ from keras.layers import Input, merge, Convolution2D, MaxPooling2D, UpSampling2D
 from keras.optimizers import Adam
 from keras.callbacks import ModelCheckpoint, LearningRateScheduler
 from keras import backend as K
+K.set_image_dim_ordering('th')  # Theano dimension ordering in this code
 
 from data import load_train_data, load_test_data
 
-K.set_image_dim_ordering('th')  # Theano dimension ordering in this code
-
 img_rows = 64
 img_cols = 80
+
+#img_rows = 420
+#img_cols = 580
+
+nb_epoch = 500
 
 smooth = 1.
 
@@ -111,7 +115,7 @@ def train_and_predict():
     print('-'*30)
     print('Fitting model...')
     print('-'*30)
-    model.fit(imgs_train, imgs_mask_train, batch_size=32, nb_epoch=20, verbose=1, shuffle=True,
+    model.fit(imgs_train, imgs_mask_train, batch_size=32, nb_epoch=nb_epoch, verbose=1, shuffle=True,
               callbacks=[model_checkpoint])
 
     print('-'*30)
