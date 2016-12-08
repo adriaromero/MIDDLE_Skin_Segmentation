@@ -1,13 +1,9 @@
-#DEEP LEARNING FOR MEDICAL IMAGE SEGMENTATION & CLASSIFICATION
+# SKIN LESION SEGMENTATION FROM DERMOSCOPIC IMAGES USING DEEP LEARNING TECHNIQUES
 
-Bachelor's Thesis. <br>
-Fall 2016.
+Authors: Jack Burdick, Adrià Romero López, Oge Marques
 
-Author: Adria Romero Lopez <br>
-Supervisor: Dr. Oge Marques (FAU Professor) <br>
-Co-Supervisor: Dr. Xavier Giró-i-Nieto (UPC Professor)<br>
+#Abstract
+The recent emergence of deep learning methods for medical image analysis has enabled the development of intelligent medical imaging-based diagnosis systems that can assist the human expert in making better decisions about a patient’s health. In this project we focus on the problem of skin lesion segmentation and present a deep-learning based approach to solve the problem of segmentation.  The proposed solution is built around the U-Net convolutional neural network architecture. 
 
-#Project overview <br>
-The purpose of this project is to classify several (not defined yet) kinds of skin lesions using Deep Neural Networks (DNNs), a form of artificial intelligence, that have been shown to accurately segment and classify lesions and malignancies in medical images (Greenspan, van Ginneken, & Summers 2016). 
-
-Furthermore, the project proposes to advance the state of the art in two significant ways: (i) by designing, implementing, and testing intelligent solutions that use macroscopic (i.e., non-dermoscopic) images as input; and (ii) by extending the use of DNNs to the skin lesion segmentation and classification problem. The motivation for (i) is due to dermatologists’ (and their assistants’) routine use of conventional cameras to take images of patients’ lesions using conventional cameras, a method that is less costly than the alternative -- dermoscopy -- which requires specialized equipment (Argenziano & Soyer, 2001). There is a large and ever growing amount of image data that can be used for training and testing our methods. The use of DNNs for the problem outlined in (ii) would represent a novel way of approaching the skin lesion segmentation and classification problem from a machine learning viewpoint, in which DNNs would be used to learn which pixels belong (or not) to the region of interest (i.e., the lesion) within the image and by training the network with a properly dataset, the system will be able to classify any kind of skin lesion image previously seen.
+#KEY WORDS
+Medical Image Analysis, Deep Learning, Medical Decision Support, Convolutional Neural Networks, Image Segmentation, Machine Learning, Melanoma, Dermoscopy, Skin Lesions.
